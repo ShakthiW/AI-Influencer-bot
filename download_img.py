@@ -4,7 +4,7 @@ import requests
 # count = random.randint(1, 1000)
 
 def download_image(url, file_path, file_name):
-    full_path = f"{file_path}{file_name}.jpg"
+    full_path = f"{file_path}{file_name}.jpeg"
     image_count = 0
     response = requests.get(url, stream=True)
     if response.status_code == 200:
