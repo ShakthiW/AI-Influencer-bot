@@ -10,7 +10,7 @@ API_KEY = os.getenv('API_KEY')
 image_count = len(os.listdir("Images/"))
 
 bot = Bot()
-bot.login(username="aiarchitectural_images", password="bcshakthi123")
+bot.login(username="username", password="password")
 
 prompt = "A beautiful anime girl with long hair and a sword"
 
