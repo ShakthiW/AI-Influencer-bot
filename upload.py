@@ -1,6 +1,17 @@
 from instabot import Bot
-bot = Bot()
-bot.login(username="", password="")
+import os
 
-######  upload a picture #######
+insta_pw = os.getenv("INSTA_PW")
+insta_user = os.getenv("INSTA_USER")
+
+bot = Bot()
+bot.login(username=insta_user, password=insta_pw)
+
+
+
+
+
+
+
 bot.upload_photo("yoda.jpg", caption="biscuit eating baby")
+
